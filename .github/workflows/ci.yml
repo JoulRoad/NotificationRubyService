@@ -37,8 +37,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout latest code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -53,8 +55,10 @@ jobs:
     needs: format
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout latest code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
