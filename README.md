@@ -1,24 +1,24 @@
-# README
+## Installation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Prerequisites
 
-Things you may want to cover:
+- Ruby version: see `.ruby-version` file (currently requires 3.3.7)
+- Bundler
 
-* Ruby version
+### First-time setup
 
-* System dependencies
+Ensure you have the correct Ruby version installed (from `.ruby-version`):
 
-* Configuration
+```bash
+# For rbenv
+rbenv install 3.3.7
 
-* Database creation
+# For rvm
+rvm install 3.3.7
+```
 
-* Database initialization
+After cloning the repository, run the setup script to configure your development environment:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+bin/setup
+```
