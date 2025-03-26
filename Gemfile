@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Specify the Ruby version from .ruby-version file
-ruby File.read('.ruby-version').strip
+ruby File.read(".ruby-version").strip
 
 # Core Rails framework
 gem "rails", "~> 8.0.2"
@@ -59,7 +59,7 @@ end
 group :development do
   # Development-specific gems
   gem "sqlite3", "~> 2.6.0"
-  
+
   # Optional development tools
   # gem "web-console"
   # gem "rack-mini-profiler"
