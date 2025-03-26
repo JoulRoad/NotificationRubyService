@@ -72,7 +72,7 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    aerospike (2.7.0)
+    aerospike (4.2.0)
       bcrypt (~> 3.1)
       msgpack (~> 1.0)
     ast (2.4.3)
@@ -319,7 +319,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  aerospike (~> 2.7.0)
+  aerospike (~> 4.2.0)
   bootsnap
   brakeman
   debug
