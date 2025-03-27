@@ -37,9 +37,10 @@ FileUtils.chdir APP_ROOT do
   puts "\n== Installing dependencies =="
   system! "gem install bundler --conservative"
   
-  # Configure bundler to use .bundle directory for gem isolation
-  puts "Configuring Bundler to use local path for gem isolation..."
+  # Configure bundler settings
+  puts "Configuring Bundler..."
   system! "bundle config set --local path '.bundle'"
+  system! "bundle config set --local without 'production'"
   
   # Install gems
   puts "Installing gems..."
