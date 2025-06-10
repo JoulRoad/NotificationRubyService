@@ -58,7 +58,7 @@ end
 
 group :development do
   # Development-specific gems
-  gem "sqlite3", "~> 2.6.0"
+  gem "sqlite3", "~> 2.7.0"
 
   # Optional development tools
   # gem "web-console"
