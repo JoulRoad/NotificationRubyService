@@ -27,7 +27,7 @@ jobs:
         run: bundle exec rubocop -A || bin/rubocop -A
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "Auto-format Ruby code with RuboCop"
           branch: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
